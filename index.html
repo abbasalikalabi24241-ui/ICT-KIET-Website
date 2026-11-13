@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET University</title>
+
+    
+<style>
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1B4568;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid #F36621;
+}
+
+/* University Images */
+.university-image {
+    width: 80%;
+    max-width: 700px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 3px solid #F36621;
+}
+
+/* Navigation */
+nav {
+    background-color: #F36621;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    color: #1B4568;
+}
+
+/* Main Sections */
+section {
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #F36621;
+}
+
+/* Headings */
+h2 {
+    color: #1B4568;
+}
+
+/* Department List */
+ul {
+    line-height: 2;
+    padding-left: 30px;
+}
+
+ul li {
+    padding-left: 5px;
+}
+
+ul li::marker {
+    color: #F36621;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1B4568;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Admission Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    color: #1B4568;
+}
+
+form input:not([type="radio"]),
+form select {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"] {
+    margin: 10px 5px;
+}
+
+form input:focus,
+form select:focus {
+    outline: 2px solid #F36621;
+}
+
+/* Buttons */
+button {
+    background-color: #F36621;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #1B4568;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    .university-image {
+        width: 100%;
+        height: auto;
+    }
+
+    form label {
+        display: block;
+        width: 100%;
+    }
+
+    form input:not([type="radio"]),
+    form select {
+        width: 100%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Karachi Institute of Economics and Technology</h1>
+        <p>Welcome to KIET University</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to KIET</h2>
+            <p>Building Knowledge, Skills and Future Leaders.</p>
+
+            <img src="images/north-campus.jpg"
+                 alt="KIET North Nazimabad Campus"
+                 class="university-image">
+
+                 <button onclick="welcomeMessage()">
+                   Welcome Message
+                 </button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our University</h2>
+            <p>
+                KIET is an educational institution
+                offering opportunities for students
+                to develop their knowledge and skills.
+            </p>
+
+             <img src="images/kiet-classroom.jpg"
+                  alt="KIET Classroom"
+                  class="university-image">
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments">
+            <h2>Our Departments</h2>
+
+            <ul>
+                <li>Computer Science</li>
+                <li>Artificial Intelligence</li>
+                <li>Software Engineering</li>
+                <li>Electrical Engineering</li>
+                <li>Business Administration</li>
+            </ul>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs">
+            <h2>Academic Programs</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Program</th>
+                    <th>Duration</th>
+                    <th>Degree</th>
+                </tr>
+
+                <tr>
+                    <td>Computer Science</td>
+                    <td>4 Years</td>
+                    <td>BSCS</td>
+                </tr>
+
+                <tr>
+                    <td>Artificial Intelligence</td>
+                    <td>4 Years</td>
+                    <td>BSAI</td>
+                </tr>
+
+                <tr>
+                    <td>Software Engineering</td>
+                    <td>4 Years</td>
+                    <td>BSSE</td>
+                </tr>
+
+                <tr>
+                    <td>Business Administration</td>
+                    <td>4 Years</td>
+                    <td>BBA</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions">
+            <h2>Admission Inquiry</h2>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name">
+                <br><br>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+                <br><br>
+
+                <label>Contact Number:</label>
+                <input type="tel" placeholder="Enter phone number">
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <br><br>
+
+                <label>Select Program:</label>
+
+                <select>
+                    <option>Computer Science</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Software Engineering</option>
+                    <option>Business Administration</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Karachi Institute of Economics and Technology</p>
+            <p>North Nazimabad, Karachi, Pakistan</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright 2026 KIET University. All Rights Reserved.</p>
+    </footer>
+
+<script>
+    function welcomeMessage() {
+        alert("Welcome to KIET University! We are glad to have you here.");
+    }
+</script>
+
+</body>
+</html>
